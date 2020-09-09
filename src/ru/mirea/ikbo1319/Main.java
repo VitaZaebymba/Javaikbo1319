@@ -1,7 +1,5 @@
 package ru.mirea.ikbo1319;
-
 import java.util.Random;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -34,15 +32,47 @@ public class Main {
             System.out.printf(" %.2f", 1.0/i);
         }*/
 
-        System.out.println(Fact(5)); //задание 8
+
+        int[] array =new int[10]; //задание 6
+        /*for(int i=0; i < array.length; i++)
+        {
+            array[i]=new Random().nextInt(99);
+        }
+        for (int i=0; i<array.length;i++) {
+            System.out.print(" "+ array[i]);
+        }
+        System.out.println();*/
+        for(int i=0; i < array.length; i++)
+        {
+            double n =Math.random() *100;
+            array[i] =(int) n;
+        }
+        for (int i=0; i<array.length;i++) {
+            System.out.print(" "+ array[i]);
+        }
+        System.out.println();
+        for (int i = array.length-1; i>0 ; i--)
+            for(int j=0; j < i; j++)
+            {
+                if(array[j] >array[j+1]){
+                    int temp=array[j];
+                    array[j]=array[j+1];
+                    array[j+1]=temp;
+                }
+            }
+        for (int i=0; i<array.length;i++) {
+            System.out.print(" "+ array[i]);
+        }
+
+       // System.out.println(Fact(5)); //задание 7
     }
-    static int Fact(int a){
+    /*static int Fact(int a){
         int result = 1;
         for (int i = 1; i <= a; i++) {
             result = result * i;
         }
         return result;
-    }
+    }*/
 }
 
 
