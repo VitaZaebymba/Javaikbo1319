@@ -1,7 +1,6 @@
-package Lab2;
+package ru.mirea.ikbo1319.Lab2;
 
-import Lab2.Dog;
-import Lab2.DogKennel;
+import ru.mirea.ikbo1319.Lab2.Dog;
 
 import java.util.*;
 

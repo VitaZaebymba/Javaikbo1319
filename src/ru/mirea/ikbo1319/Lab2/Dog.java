@@ -1,4 +1,4 @@
-package Lab2;
+package ru.mirea.ikbo1319.Lab2;
 
 import java.lang.String;
 
