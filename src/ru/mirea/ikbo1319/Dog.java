@@ -1,38 +1,34 @@
-package ru.mirea.ikbo1319;
+package Lab2;
 
-import java.lang.*;
+import java.lang.String;
+
 public class Dog {
-    private String name;
     private int age;
+    private String name;
 
-    public Dog(String n, int a) {
-        name = n;
-        age = a;
+    public Dog(String name, int age){
+        this.age=age;
+        this.name=name;
     }
-    public Dog(String n) {
-        name = n;
-        age = 0;
-    }
-    public Dog(){
-        name = "Pup";
-        age = 0;
-    }
-    public void setAge(int age) {
-        this.age = age;
+    public String getName() {
+        return name;
     }
     public void setName(String name) {
         this.name = name;
     }
-    public String getName(String name){
-        return name;
-    }
     public int getAge() {
         return age;
     }
-    public String toString(){
-        return this.name+", age "+this.age;
+
+    public void setAge(int age) {
+        this.age = age;
     }
-    public void intoHumanAge(){
-        System.out.println(name+"'s age in human years is "+age*7+" years");
+
+    public int ageDog (int age) {
+        return this.age = age * 7;
+    }
+    public String toString(){
+        return this.name + " " + getAge();
+
     }
 }

@@ -1,15 +1,18 @@
-package ru.mirea.ikbo1319;
+package Lab2;
+
+import Lab2.Dog;
+
+import java.util.*;
+import java.lang.String;
 
 public class DogKennel {
-    public static void main(String[] args) {
-        Dog d1 = new Dog("Kratos", 15);
-        Dog d2 = new Dog("Geralt", 10);
-        Dog d3 = new Dog("Arthur", 2);
-        d3.setAge(1);
-        System.out.println(d1);
-        d1.intoHumanAge();
-        d2.intoHumanAge();
-        d3.intoHumanAge();
-    }
-}
 
+    public void dogAdd(String name, int age){
+        dogs.add(new Dog(name, age));
+    }
+    public void show(){
+        System.out.println(dogs);
+    }
+
+    ArrayList <Dog> dogs = new ArrayList<Dog>();
+}

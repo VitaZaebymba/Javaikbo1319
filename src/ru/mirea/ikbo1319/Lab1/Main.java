@@ -1,4 +1,4 @@
-package ru.mirea.ikbo1319;
+package ru.mirea.ikbo1319.Lab1;
 import java.util.Random;
 public class Main {
 
