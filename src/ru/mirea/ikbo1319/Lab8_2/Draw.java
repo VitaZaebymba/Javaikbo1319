@@ -22,9 +22,9 @@ public class Draw extends JFrame {
 
         protected void paintComponent(Graphics g){
             super.paintComponent(g);
-            Font font = new Font("Arial",Font.BOLD,20);
+            Font font = new Font("EVE",Font.BOLD,20);
             g.setFont(font);
-            g.drawString("Hello My Shape",20,30);
+            g.drawString("Hello, math",20,30);
             Image image = new ImageIcon(arr[0]).getImage();
             g.drawImage(image,0,0,null);
         }
